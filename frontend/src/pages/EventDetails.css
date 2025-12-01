@@ -1,0 +1,157 @@
+.event-details-page {
+  padding: 40px 0;
+  min-height: calc(100vh - 80px);
+}
+
+.back-link {
+  color: #6366f1;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.event-details-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.event-details-main {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-details-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  background-color: #f3f4f6;
+}
+
+.event-details-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-details-info h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.event-description-full {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+.event-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.detail-item {
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+}
+
+.detail-item strong {
+  display: block;
+  color: #6366f1;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.detail-item p {
+  color: #1f2937;
+  font-size: 16px;
+  margin: 0;
+}
+
+.venue-address {
+  font-size: 14px !important;
+  color: #6b7280 !important;
+  margin-top: 4px !important;
+}
+
+.event-booking-card {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.booking-header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.event-price-large {
+  font-size: 48px;
+  font-weight: 700;
+  color: #6366f1;
+  display: block;
+}
+
+.price-label {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.availability-info {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: #f0f9ff;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.availability-info p {
+  color: #1e40af;
+  margin: 0;
+}
+
+.login-prompt {
+  text-align: center;
+  margin-top: 16px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.login-prompt a {
+  color: #6366f1;
+  font-weight: 600;
+}
+
+@media (max-width: 968px) {
+  .event-details-content {
+    grid-template-columns: 1fr;
+  }
+
+  .event-booking-card {
+    position: static;
+  }
+
+  .event-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
